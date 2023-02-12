@@ -942,7 +942,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "carb":
         buttons = [[
             InlineKeyboardButton('⇍Bᴀᴄᴋ', callback_data='help')
-        ]]
+        ]]it
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.CARB_TXT,
@@ -962,12 +962,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "group_info":
         buttons = [[
-            InlineKeyboardButton("Bᴏᴛ Dᴀᴛᴀʙᴀꜱᴇ", url={GRP_LIK
+            InlineKeyboardButton("Bᴏᴛ Dᴀᴛᴀʙᴀꜱᴇ", url={GRP_LINK}
                   ],[
-            InlineKeyboardButton("Gʀᴏᴜᴘ", url="t.me/cinemathattakam_group"),
+            InlineKeyboardButton("Gʀᴏᴜᴘ", url={GRP_LINK},
             InlineKeyboardButton("​Cʜᴀɴɴᴇʟ", url="t.me/KMMoviesTG")
                   ],[
-            InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ", url="t.me/cinemathattakam_group"),
+            InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ", url="{GRP_LINK},
             InlineKeyboardButton("Uᴘᴅᴀᴛᴇꜱ", url="t.me/KMMoviesTG")
                   ],[
             InlineKeyboardButton("⇍Bᴀᴄᴋ", callback_data="start")
