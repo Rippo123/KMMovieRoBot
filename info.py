@@ -42,9 +42,9 @@ class evamaria(Client):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID','669072'))
-API_HASH = environ.get('API_HASH','None')
-BOT_TOKEN = environ.get('BOT_TOKEN','None')
+API_ID = int(environ.get('API_ID','16233759'))
+API_HASH = environ.get('API_HASH','6260bf74ef8f728839d91095d0522101')
+BOT_TOKEN = environ.get('BOT_TOKEN','5810618042:AAGWgczR_e0ZV2oqzXW0y_WTTbmGopkhmBs')
 
 # Bot settings
 CACHE_TIME = 300
@@ -60,9 +60,9 @@ MELCOW_VID = environ.get('MELCOW_VID',"https://telegra.ph/file/b26637d70f3630a7e
 
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', 'None').split()] 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', 'None').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1994966467').split()] 
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', ' -1001862901554').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', ').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -74,10 +74,10 @@ TMP_DOWNLOAD_DIRECTORY = environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
 COMMAND_HAND_LER = ("/")
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "None")
-DATABASE_NAME = environ.get('DATABASE_NAME', "None")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Kmmovibot:kmmoviebot@cluster0.ofven0g.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-MONGO_URL = os.environ.get('MONGO_URL', "None")
+MONGO_URL = os.environ.get('MONGO_URL', "mongodb+srv://Mirrorbot:kmmirrorbot@cluster0.bn8uj0d.mongodb.net/?retryWrites=true&w=majority")
 
 #Downloader
 DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
@@ -87,12 +87,12 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 PORT = os.environ.get("PORT", "8080")
 MAX_BTN = int(environ.get('MAX_BTN', "10"))
 S_GROUP = environ.get('S_GROUP',"https://t.me/CV_linkz")
-MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/CV_Official")
+MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/KMMoviesTG")
 FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/+TMCviP7KUY8yZjI9")
 MSG_ALRT = environ.get('MSG_ALRT', '𝐓𝐡𝐚𝐧𝐤 𝐲𝐨𝐮 𝐒𝐢𝐫 💜')
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', 0))
-LOG_CHANNEL =-1001790957739
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'CV_linkZ')
+LOG_CHANNEL = -1001785529053
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'CV_linkZ') ik
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
